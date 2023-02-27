@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:autoTransition="animateToEnd"
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000"
+        motion:motionInterpolator="cubic(0.54,0,0.29,0.22)">
+        <KeyFrameSet>
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/imageView2"
+            android:layout_width="194dp"
+            android:layout_height="205dp"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="275dp"
+            android:layout_marginBottom="304dp"
+            android:scaleX="0"
+            android:scaleY="0"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.528"
+            motion:transitionEasing="cubic(0.88,0,0.64,0.87)" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/imageView2"
+            android:layout_width="194dp"
+            android:layout_height="205dp"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="275dp"
+            android:layout_marginBottom="304dp"
+            android:scaleX="1"
+            android:scaleY="1"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.528"
+            motion:transitionEasing="cubic(0.51,0.16,0.45,0.83)" />
+    </ConstraintSet>
+</MotionScene>

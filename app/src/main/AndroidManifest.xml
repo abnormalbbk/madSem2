@@ -12,7 +12,10 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".Dashboard"
+            android:name=".dashboard.settingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashboard.Dashboard"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

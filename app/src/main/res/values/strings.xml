@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="pashupati_travel">PASHUPATI TRAVEL</string>
+    <string name="explore_with_us">Explore with us</string>
+    <string name="main_logo_of_the_app">main logo of the app</string>
+    <string name="hiking">Hiking</string>
+    <string name="rafting">Rafting</string>
+    <string name="paragliding">Paragliding</string>
+    <string name="flight">Flight</string>
+    <string name="hotel">Hotel</string>
+    <string name="helicopter">Helicopter</string>
+    <string name="all_right_reserved_by_pashupati_travels_pvt_ltd">All Right Reserved by Pashupati Travels.Pvt.Ltd</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
