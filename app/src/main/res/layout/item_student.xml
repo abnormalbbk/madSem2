@@ -40,4 +40,13 @@
         tools:layout_editor_absoluteY="40dp"
         tools:text="2 years" />
 
+    <ImageButton
+        android:id="@+id/ivDelete"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
