@@ -6,8 +6,7 @@
         motion:autoTransition="animateToEnd"
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="1000"
-        motion:motionInterpolator="cubic(0.54,0,0.29,0.22)">
+        motion:duration="1000">
         <KeyFrameSet>
         </KeyFrameSet>
     </Transition>
