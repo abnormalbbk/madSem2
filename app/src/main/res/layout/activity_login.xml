@@ -22,19 +22,12 @@
             android:orientation="vertical"
             tools:ignore="MissingConstraints,UselessParent">
 
-            <Button
-                android:id="@+id/btnBackLeftArrow"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/baseline_keyboard_arrow_left_24"
-                tools:ignore="SpeakableTextPresentCheck" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginHorizontal="30dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginBottom="25dp"
                 android:orientation="vertical">
 
@@ -50,32 +43,42 @@
                         android:textColor="#ED000000"
                         tools:ignore="TouchTargetSizeCheck" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/login"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlSymmetry,TextContrastCheck" />
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="60dp">
+
+                    <ImageView
+                        android:id="@+id/profileImageCapture"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:orientation="horizontal">
+                        android:contentDescription="@null"
+                        android:src="@mipmap/img_user"
+                        android:textAlignment="center" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/login"
-                            android:textSize="25sp"
-                            android:textStyle="bold"
-                            tools:ignore="RtlSymmetry,TextContrastCheck" />
-
-                    </LinearLayout>
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="45dp"
+                    android:layout_marginTop="30dp"
                     android:layout_marginBottom="10dp"
                     android:orientation="vertical">
 
                     <EditText
-                        android:id="@+id/tvLoginUsername"
+                        android:id="@+id/editTextUsername"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -90,7 +93,7 @@
 
 
                     <EditText
-                        android:id="@+id/tvLoginPassword"
+                        android:id="@+id/editTextPassword"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -107,7 +110,7 @@
                         android:id="@+id/btnCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="25dp"
                         android:text="@string/remember_me"
                         android:textColor="#575757"
                         tools:ignore="TouchTargetSizeCheck" />
@@ -117,7 +120,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="5dp"
                         android:layout_marginBottom="5dp"
                         android:backgroundTint="#52B3FF"
                         android:text="@string/login"
@@ -129,8 +132,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
                     android:orientation="horizontal"
                     tools:ignore="MissingConstraints">
 
@@ -157,7 +160,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="40dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="40dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -213,7 +216,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="50dp"
+                    android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
                     android:orientation="horizontal">
 
@@ -242,8 +245,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:paddingBottom="65dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="25dp"
                     android:text="@string/_2023"/>
 
             </LinearLayout>
