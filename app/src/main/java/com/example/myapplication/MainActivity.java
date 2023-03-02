@@ -13,5 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         new Handler().postDelayed(() -> startActivity(new Intent(MainActivity.this,Dashboard.class)),3000);
+        finish();
+
     }
 }
