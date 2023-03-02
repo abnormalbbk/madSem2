@@ -12,7 +12,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Dashboard extends AppCompatActivity {
 
-
+    BottomNavigationView bottomNavigationView;
     HomeFragment homeFragment = new HomeFragment();
     PaymentFragment paymentFragment = new PaymentFragment();
     ContactFragment contactFragment = new ContactFragment();
@@ -26,7 +26,7 @@ public class Dashboard extends AppCompatActivity {
 
         setContentView(R.layout.activity_dashboard);
 
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomView);
+        bottomNavigationView = findViewById(R.id.bottomView);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragHolder,homeFragment).commit();
         bottomNavigationView.setOnItemSelectedListener(item -> {
             switch (item.getItemId()){
