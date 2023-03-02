@@ -1,17 +1,13 @@
 package com.example.myapplication.dashboard.contact;
 
 import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.example.myapplication.R;
 import com.example.myapplication.dashboard.contact.adapter.ContactRecyclerAdapter;
 import com.example.myapplication.dashboard.contact.contactpojo.ContactPojo;
@@ -22,7 +18,7 @@ import java.util.ArrayList;
 public class ContactFragment extends Fragment {
     RecyclerView recyclerView;
     Activity context;
-ArrayList<ContactPojo> contactPojo = new ArrayList<ContactPojo>();
+ArrayList<ContactPojo> contactPojo = new ArrayList<>();
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -36,7 +32,7 @@ ArrayList<ContactPojo> contactPojo = new ArrayList<ContactPojo>();
     public void onStart() {
         super.onStart();
 
-        recyclerView = (RecyclerView)context.findViewById(R.id.recyclerContact);
+        recyclerView = context.findViewById(R.id.recyclerContact);
         recyclerView.setLayoutManager(new LinearLayoutManager(context));
         contactPojo.add(new ContactPojo(R.mipmap.ic_six,R.drawable.ic_delete,"Paurakh Saud","9848848488"));
         contactPojo.add(new ContactPojo(R.mipmap.ic_six,R.drawable.ic_delete,"Yair Valencia","9848848488"));
