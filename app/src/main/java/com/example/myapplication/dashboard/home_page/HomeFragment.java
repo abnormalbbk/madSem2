@@ -10,11 +10,7 @@ import android.view.ViewGroup;
 
 import com.example.myapplication.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the  factory method to
- * create an instance of this fragment.
- */
+
 public class HomeFragment extends Fragment {
 
 

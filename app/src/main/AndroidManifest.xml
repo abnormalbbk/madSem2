@@ -15,7 +15,7 @@
             android:name=".settingsActivity"
             android:exported="false" />
         <activity
-            android:name=".Dashboard"
+            android:name=".dashboard.Dashboard"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
