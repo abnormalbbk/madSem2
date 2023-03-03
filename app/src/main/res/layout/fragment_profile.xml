@@ -13,9 +13,5 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="20dp"/>
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/postLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
 </LinearLayout>

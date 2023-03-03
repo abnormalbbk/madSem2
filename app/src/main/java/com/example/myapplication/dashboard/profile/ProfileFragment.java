@@ -13,8 +13,6 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import com.example.myapplication.R;
-import com.example.myapplication.dashboard.contact.adapter.ContactRecyclerAdapter;
-import com.example.myapplication.dashboard.contact.contactpojo.ContactPojo;
 import com.example.myapplication.dashboard.profile.adapter.ProfileStoryRecyclerAdapter;
 import com.example.myapplication.dashboard.profile.profilepojo.ProfilesPojo;
 
@@ -52,6 +50,5 @@ public class ProfileFragment extends Fragment {
 
         ProfileStoryRecyclerAdapter adapter = new ProfileStoryRecyclerAdapter(context,storyProfiles);
         recyclerView.setAdapter(adapter);
-
     }
 }

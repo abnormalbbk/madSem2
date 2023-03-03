@@ -19,6 +19,7 @@ public class ContactFragment extends Fragment {
     RecyclerView recyclerView;
     Activity context;
 ArrayList<ContactPojo> contactPojo = new ArrayList<>();
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

@@ -11,8 +11,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapplication.R;
-import com.example.myapplication.dashboard.contact.adapter.ContactRecyclerAdapter;
-import com.example.myapplication.dashboard.contact.contactpojo.ContactPojo;
 import com.example.myapplication.dashboard.profile.profilepojo.ProfilesPojo;
 
 import java.util.ArrayList;
